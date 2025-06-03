@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cenabet - Kazanç Cebinde</title>
+  <title>Marka Tanıtım Paneli</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #0e1a2b;
+      background-color: #0f1117;
       color: #fff;
     }
     header {
-      background-color: #1d2a3b;
-      padding: 10px;
+      background-color: #1a1c22;
+      padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -21,90 +21,89 @@
     .logo {
       font-size: 24px;
       font-weight: bold;
-      color: red;
-      cursor: pointer;
+      color: #facc15;
     }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .hero {
-      background: url('20941.webp') no-repeat center center;
-      background-size: cover;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 32px;
-      color: red;
-    }
-    .hero p {
-      font-size: 18px;
-    }
-    .hero img {
-      max-width: 300px;
-      margin-top: 20px;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: red;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    .menu-grid {
-      display: flex;
-      justify-content: center;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 20px;
-      background: #14202f;
-      padding: 20px;
-      flex-wrap: wrap;
+      padding: 40px 20px;
     }
-    .menu-item {
-      background: #1e2d40;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-      width: 120px;
+    .brand {
+      background-color: #1f2230;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      transition: transform 0.3s;
       cursor: pointer;
     }
-    .menu-item:hover {
-      background: #2e415d;
+    .brand:hover {
+      transform: scale(1.05);
+      background-color: #2a2f42;
+    }
+    .brand img {
+      max-width: 100%;
+      max-height: 60px;
+    }
+    .brand span {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ccc;
+    }
+    .search-bar {
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .search-bar input {
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      width: 80%;
+      max-width: 400px;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo" onclick="window.location='https://cutt.ly/zreNRUEo'">CENABET</div>
-    <nav>
-      <a href="https://cutt.ly/zreNRUEo">Anasayfa</a>
-      <a href="https://cutt.ly/zreNRUEo">Casino</a>
-      <a href="https://cutt.ly/zreNRUEo">Canlı Casino</a>
-      <a href="https://cutt.ly/zreNRUEo">Spor</a>
-      <a href="https://cutt.ly/zreNRUEo">TV Oyunlar</a>
-    </nav>
+    <div class="logo">Marka Paneli</div>
+    <div>
+      <button onclick="alert('Demo giriş!')">Giriş Yap</button>
+    </div>
   </header>
 
-  <div class="hero" onclick="window.location='https://cutt.ly/zreNRUEo'">
-    <h1>"CENABET UYGULAMASIYLA KAZANÇ CEBİNDE!"</h1>
-    <p>TEK TIKLA İNDİR, ŞANSINI CEBİNE TAŞI!</p>
-    <a class="button" href="https://cutt.ly/zreNRUEo">DETAYLAR</a>
-    <br />
-    <img src="33b3fb4e-d510-43a2-bace-e8863c6ff097.png" alt="Cenabet App">
+  <div class="search-bar">
+    <input type="text" placeholder="Marka ara..." />
   </div>
 
-  <div class="menu-grid">
-    <div class="menu-item" onclick="window.location='https://cutt.ly/zreNRUEo'">Casino</div>
-    <div class="menu-item" onclick="window.location='https://cutt.ly/zreNRUEo'">Canlı Casino</div>
-    <div class="menu-item" onclick="window.location='https://cutt.ly/zreNRUEo'">Canlı Bahis</div>
-    <div class="menu-item" onclick="window.location='https://cutt.ly/zreNRUEo'">Spor</div>
-    <div class="menu-item" onclick="window.location='https://cutt.ly/zreNRUEo'">E-Spor</div>
-    <div class="menu-item" onclick="window.location='https://cutt.ly/zreNRUEo'">Sanal Spor</div>
-    <div class="menu-item" onclick="window.location='https://cutt.ly/zreNRUEo'">Hızlı Oyunlar</div>
-    <div class="menu-item" onclick="window.location='https://cutt.ly/zreNRUEo'">Bonus</div>
+  <div class="grid">
+    <!-- Güncellenmiş tüm kartlar yeni logo ile -->
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="Gamdom"><span>Gamdom</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="MeritZone"><span>MeritZone</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="AMK"><span>AMK</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="BetsRolex"><span>BetsRolex</span></div>
+
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="BullZone"><span>BullZone</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="BenimOyun"><span>BenimOyun</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="GettoZone"><span>GettoZone</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="TrupiArena"><span>TrupiArena</span></div>
+
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="NanoZone"><span>NanoZone</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="CaddePlus"><span>CaddePlus</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="KlasArena"><span>KlasArena</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="CasiBlu"><span>CasiBlu</span></div>
+
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="ParmaZone"><span>ParmaZone</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="LordCenter"><span>LordCenter</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="OrderPlace"><span>OrderPlace</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="VPlus"><span>VPlus</span></div>
+
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="SlotBar"><span>SlotBar</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="CasiVera"><span>CasiVera</span></div>
+    <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="1efafa66-51a0-4171-940b-0f61c49dd652.png" alt="KingArena"><span>KingArena</span></div>
   </div>
 </body>
 </html>

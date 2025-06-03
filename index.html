@@ -65,42 +65,83 @@
       width: 80%;
       max-width: 400px;
     }
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #1f2230;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      z-index: 1000;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      width: 300px;
+    }
+    .modal input {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+    }
+    .modal button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #facc15;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 18px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">Marka Paneli</div>
     <div>
-      <button onclick="alert('Demo giriş!')">Giriş Yap</button>
+      <button onclick="document.getElementById('modal').style.display='flex'">Giriş Yap</button>
     </div>
   </header>
+
+  <div id="modal" class="modal">
+    <div class="modal-close" onclick="document.getElementById('modal').style.display='none'">&times;</div>
+    <h3>Hesap Oluştur</h3>
+    <input type="text" placeholder="Kullanıcı Adı" />
+    <input type="email" placeholder="E-posta" />
+    <input type="password" placeholder="Şifre" />
+    <button onclick="alert('Hesap oluşturuldu !')">Kaydol</button>
+  </div>
 
   <div class="search-bar">
     <input type="text" placeholder="Marka ara..." />
   </div>
 
   <div class="grid">
-    <!-- Tüm markalar tek görselle -->
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="Gamdom"><span>Gamdom</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="MeritZone"><span>MeritZone</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="AMK"><span>AMK</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="BetsRolex"><span>BetsRolex</span></div>
-
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="BullZone"><span>BullZone</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="BenimOyun"><span>BenimOyun</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="GettoZone"><span>GettoZone</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="TrupiArena"><span>TrupiArena</span></div>
-
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="NanoZone"><span>NanoZone</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="CaddePlus"><span>CaddePlus</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="KlasArena"><span>KlasArena</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="CasiBlu"><span>CasiBlu</span></div>
-
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="ParmaZone"><span>ParmaZone</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="LordCenter"><span>LordCenter</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="OrderPlace"><span>OrderPlace</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="VPlus"><span>VPlus</span></div>
-
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="SlotBar"><span>SlotBar</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="CasiVera"><span>CasiVera</span></div>
     <div class="brand" onclick="window.location='https://mikrofonkrali.com'"><img src="https://raw.githubusercontent.com/tgC3ren1/cenabet/main/denemefix.jpg" alt="KingArena"><span>KingArena</span></div>

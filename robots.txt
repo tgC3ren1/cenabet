@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tgc3ren1.github.io/cenabet/sitemap.xml
